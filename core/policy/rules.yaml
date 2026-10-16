@@ -1,0 +1,18 @@
+agent: shopping-assistant
+limits:
+  per_transaction: 50.00
+  daily: 150.00
+  monthly: 600.00
+merchants:
+  allow:
+    - acme-store
+    - bluecart
+    - greenmart
+categories:
+  deny:
+    - gift_cards
+    - crypto
+    - gambling
+approval_required_above: 25.00
+velocity:
+  max_transactions_per_hour: 3
